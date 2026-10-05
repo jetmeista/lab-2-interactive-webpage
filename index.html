@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mood Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Interactive Mood Page</h1>
+        <p>Interact with the page to find out more!</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>1. Change the Mood</h2>
+            <p>Click the button to change the page theme.</p>
+            <button id="themeButton">Change Theme</button>
+        </section>
+
+        <section class="card">
+            <h2>2. Type Something</h2>
+            <p>Type a message below:</p>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type here..."
+            >
+
+            <p id="displayMessage">Your message will appear here.</p>
+        </section>
+
+        <section class="card">
+            <h2>3. Browser Information</h2>
+
+            <p>
+                Window size:
+                <span id="windowSize"></span>
+            </p>
+
+            <p>
+                Current time:
+                <span id="clock"></span>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>4. Follow the Mouse</h2>
+            <p>Move your mouse around the page.</p>
+        </section>
+
+    </main>
+
+    <div id="mouseCircle"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
